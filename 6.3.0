@@ -1,0 +1,20 @@
+#%Module
+module-whatis	 "Loads ROCm/6.3.0 module.
+
+This module was built on Tue Dec 10 01:47:16 PM EST 2024
+
+ROCm (https://github.com/ROCm/HIP) HIP: C++ Heterogeneous-Compute Interface for Portability.
+
+The script used to build this module can be found here: https://github.com/northeastern-rc-software-modules/ROCm-6.3.0
+
+To load the module, type:
+module load cuda/12.3.0
+module load ROCm/6.3.0
+
+"
+
+conflict	 ROCm
+prepend-path    PATH /shared/EL9/explorer/ROCm/6.3.0/src/clr/build/install/bin
+prepend-path    LD_LIBRARY_PATH /shared/EL9/explorer/ROCm/6.3.0/src/clr/build/install/lib64
+prepend-path    LIBRARY_PATH /shared/EL9/explorer/ROCm/6.3.0/src/clr/build/install/lib64
+prepend-path    CPATH /shared/EL9/explorer/ROCm/6.3.0/src/clr/build/install/include
